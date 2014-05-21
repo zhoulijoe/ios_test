@@ -9,13 +9,20 @@ PODS:
   - Kiwi/XCTest (2.2.4):
     - Kiwi/ARC
     - Kiwi/NonARC
+  - ZLIUtils (0.0.1):
+    - CocoaLumberjack
 
 DEPENDENCIES:
-  - CocoaLumberjack
   - Kiwi/XCTest
+  - ZLIUtils (from `../ios_utils`)
+
+EXTERNAL SOURCES:
+  ZLIUtils:
+    :path: ../ios_utils
 
 SPEC CHECKSUMS:
-  CocoaLumberjack: 020378ec400d658923bf5887178394f65f052c90
-  Kiwi: d60d7498b640a16f58b01925fc3c8d7c4d809f66
+  CocoaLumberjack: 9d198d6e19909b3b113a38c5f06f7bb8eedd0427
+  Kiwi: c73667f2b84cbf36f1a3830267c5a4ae8dcbd8ba
+  ZLIUtils: 617d2af95c93ed591e533c38f7f50183ee111b3c
 
-COCOAPODS: 0.32.1
+COCOAPODS: 0.33.0

@@ -1,5 +1,6 @@
 #import "ZLISuperClass.h"
-#import "ZLIUtil.h"
+#import <ZLIUtils/ZLILogger.h>
+#import <ZLIUtils/ZLIMathUtil.h>
 
 /**
  * Class extension
@@ -63,11 +64,11 @@
  * Gets called when object gets deallocated in memory
  */
 - (void)dealloc {
-    NSLog(@"%@", [NSString stringWithUTF8String:__PRETTY_FUNCTION__]);
+    DDLogVerbose(@"%@", [NSString stringWithUTF8String:__PRETTY_FUNCTION__]);
 }
 
 - (void)measureHight {
-    self.height = [NSNumber numberWithInt:[ZLIUtil getRandomIntBetween:60 UpperBound:80]];
+    self.height = [NSNumber numberWithInt:[ZLIMathUtil getRandomIntBetween:60 UpperBound:80]];
 }
 
 - (void)superMethod {

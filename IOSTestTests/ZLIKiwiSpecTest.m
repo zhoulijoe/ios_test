@@ -1,8 +1,24 @@
 #import "Kiwi.h"
 
-SPEC_BEGIN(MathSpec)
+SPEC_BEGIN(SampleKiwi)
 
 describe(@"Math", ^{
+    beforeAll(^{
+        NSLog(@"Before all tests");
+    });
+
+    beforeEach(^{
+        NSLog(@"Before each test");
+    });
+
+    afterEach(^{
+        NSLog(@"After each test");
+    });
+
+    afterAll(^{
+        NSLog(@"After all tests");
+    });
+
     it(@"is pretty cool", ^{
         NSUInteger a = 16;
         NSUInteger b = 26;

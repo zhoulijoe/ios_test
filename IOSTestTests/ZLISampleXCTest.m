@@ -1,9 +1,9 @@
 #import <XCTest/XCTest.h>
-#import "ZLIRootViewController.h"
+#import "ZLISuperClass.h"
 
 @interface ZLISampleXCTest : XCTestCase
 
-@property ZLIRootViewController *vc;
+@property ZLISuperClass *sc;
 
 @end
 
@@ -21,7 +21,7 @@
     NSLog(@"%@ per test setup", NSStringFromSelector(_cmd));
     [super setUp];
 
-    self.vc = [ZLIRootViewController new];
+    self.sc = [ZLISuperClass new];
 }
 
 - (void)tearDown {
@@ -32,11 +32,11 @@
 /**
  * Dummy test for method that returns a string
  */
-- (void)testDogMyCats {
-    NSString *input = @"cats";
-    NSString *expectedOutput = @"dogs";
-    NSString *output = [self.vc dogMyCats:input];
-    XCTAssertEqualObjects(output, expectedOutput, @"ZLIRootViewController dogMyCats with input %@ "
+- (void)testGreeting {
+    NSString *input = @"hello";
+    NSString *expectedOutput = @"hello";
+    NSString *output = [self.sc saySomething:input];
+    XCTAssertEqualObjects(output, expectedOutput, @"ZLISuperClass saySomething with input %@ "
                           @"outputs %@ instead of %@", input, output, expectedOutput);
 }
 

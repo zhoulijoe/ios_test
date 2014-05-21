@@ -87,7 +87,7 @@ describe(@"collection test", ^{
                     *stop = YES;
                 }
             }];
-            [[intArray should] equal:@[@1, @2, @3, @4, @5, @6, @6, @7, @8, @9]];
+            [[expectFutureValue(intArray) shouldEventually] equal:@[@1, @2, @3, @4, @5, @6, @6, @7, @8, @9]];
         });
 
         it(@"writing and loading from file", ^{

@@ -1,9 +1,10 @@
 #import "ZLISimpleViewController.h"
+#import <ZLIUtils/ZLILogger.h>
 
 @implementation ZLISimpleViewController
 
 - (id)initWithCoder:(NSCoder *)aDecoder {
-    NSLog(@"%s", __PRETTY_FUNCTION__);
+    DDLogVerbose(@"%s", __PRETTY_FUNCTION__);
     self = [super initWithCoder:aDecoder];
     if (self) {
 

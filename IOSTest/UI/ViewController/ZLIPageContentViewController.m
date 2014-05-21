@@ -1,4 +1,5 @@
 #import "ZLIPageContentViewController.h"
+#import <ZLIUtils/ZLILogger.h>
 #import "ZLISuperClass+ZLISuperClassCategory.h"
 
 @implementation ZLIPageContentViewController
@@ -11,7 +12,7 @@
 }
 
 - (IBAction)edgeTap:(id)sender {
-    NSLog(@"Edge tapped");
+    DDLogDebug(@"Edge tapped");
     [[NSNotificationCenter defaultCenter] postNotificationName:@"edgeTap" object:sender];
 }
 

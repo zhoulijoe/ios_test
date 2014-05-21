@@ -1,9 +1,12 @@
 #import "ZLIAppDelegate.h"
+#import <ZLIUtils/ZLILogger.h>
 
 @implementation ZLIAppDelegate
 
 - (BOOL)application:(UIApplication *)application willFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    [ZLILogger attachLogger];
+
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
@@ -61,7 +64,7 @@
  * @return boolean indicating whether requested method is implemented
  */
 - (BOOL)respondsToSelector:(SEL)aSelector {
-    //NSLog(@"%@", NSStringFromSelector(aSelector));
+    DDLogVerbose(@"%@", NSStringFromSelector(aSelector));
     return [super respondsToSelector:aSelector];
 }
 
