@@ -16,6 +16,8 @@ static BOOL superClassMethodCalled = NO;
 @property NSMutableArray *stackTrace;
 /** Block property needs to be copied to maintain original scope */
 @property (copy) ZLISimpleBlock simpleBlockProperty;
+@property (assign, nonatomic) NSInteger age;
+@property (assign, nonatomic) BOOL happy;
 
 /**
  * Factory method to get an instance
@@ -55,6 +57,8 @@ static BOOL superClassMethodCalled = NO;
 + (double)methodWithBlock:(double (^)(double, double))block;
 
 - (id)initWithFirstName:(NSString *)aFirstName lastName:(NSString *)aLastName;
+
+- (void)modifyFirstName:(NSString *)firstName lastName:(NSString *)lastName;
 
 - (void)measureHight;
 

@@ -37,6 +37,35 @@
                BlueprintName = "IOSTestTests"
                ReferencedContainer = "container:IOSTest.xcodeproj">
             </BuildableReference>
+            <SkippedTests>
+               <Test
+                  Identifier = "Block">
+               </Test>
+               <Test
+                  Identifier = "Collection">
+               </Test>
+               <Test
+                  Identifier = "Concurrency">
+               </Test>
+               <Test
+                  Identifier = "DependencyInjection">
+               </Test>
+               <Test
+                  Identifier = "FoundationClasses">
+               </Test>
+               <Test
+                  Identifier = "Inheritance">
+               </Test>
+               <Test
+                  Identifier = "OCBasic">
+               </Test>
+               <Test
+                  Identifier = "SampleKiwi">
+               </Test>
+               <Test
+                  Identifier = "ZLISampleXCTest">
+               </Test>
+            </SkippedTests>
          </TestableReference>
       </Testables>
       <MacroExpansion>

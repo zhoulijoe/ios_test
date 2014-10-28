@@ -5,36 +5,48 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>BD878644-7403-422D-83D9-1F4EB2798370</string>
+	<string>179FE801-4F27-46AB-945B-866FEFE1E064</string>
 	<key>IDESourceControlProjectName</key>
 	<string>IOSTest</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>175CF847-603D-4705-8092-055F97CFA823</key>
+		<key>047546D35F8F698AA11E1EA5F7B8707C80842474</key>
+		<string>https://github.com/zhoulijoe/ios_utils.git</string>
+		<key>5BB87F9AD5AEA0AEBB21BD56E70E42476B9A75C4</key>
 		<string>https://github.com/zhoulijoe/ios_test.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>IOSTest.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>175CF847-603D-4705-8092-055F97CFA823</key>
+		<key>047546D35F8F698AA11E1EA5F7B8707C80842474</key>
+		<string>../../ios_utils</string>
+		<key>5BB87F9AD5AEA0AEBB21BD56E70E42476B9A75C4</key>
 		<string>..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/zhoulijoe/ios_test.git</string>
 	<key>IDESourceControlProjectVersion</key>
-	<integer>110</integer>
+	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>175CF847-603D-4705-8092-055F97CFA823</string>
+	<string>5BB87F9AD5AEA0AEBB21BD56E70E42476B9A75C4</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>175CF847-603D-4705-8092-055F97CFA823</string>
+			<string>5BB87F9AD5AEA0AEBB21BD56E70E42476B9A75C4</string>
 			<key>IDESourceControlWCCName</key>
 			<string>ios_test</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>047546D35F8F698AA11E1EA5F7B8707C80842474</string>
+			<key>IDESourceControlWCCName</key>
+			<string>ios_utils</string>
 		</dict>
 	</array>
 </dict>

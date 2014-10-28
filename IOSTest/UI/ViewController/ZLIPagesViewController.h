@@ -1,3 +1,3 @@
-@interface ZLIPagesViewController : UINavigationController
+@interface ZLIPagesViewController : UIPageViewController
 
 @end

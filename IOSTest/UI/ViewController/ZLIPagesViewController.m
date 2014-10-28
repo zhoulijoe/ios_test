@@ -1,6 +1,7 @@
 #import "ZLIPagesViewController.h"
 #import "ZLISuperClass.h"
 #import "ZLIPageContentViewController.h"
+#import <ZLIUtils/ZLILogger.h>
 
 @interface ZLIPagesViewController () <UIPageViewControllerDataSource>
 
@@ -27,18 +28,17 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-    UIPageViewController *pageViewVC = (UIPageViewController *)self.topViewController;
-    pageViewVC.dataSource = self;
+    self.dataSource = self;
 
     ZLIPageContentViewController *pageContent = [self initializePageContent];
     pageContent.person = self.superClasses[0];
 
-    [pageViewVC setViewControllers:@[pageContent]
+    [self setViewControllers:@[pageContent]
                          direction:UIPageViewControllerNavigationDirectionForward
                           animated:NO
                         completion:nil];
     [self stylePageIndicator];
-    [self flipPageWithTap:pageViewVC];
+    [self flipPageWithTap:self];
 }
 
 - (void)dealloc {
@@ -122,6 +122,25 @@
 - (ZLIPageContentViewController *)initializePageContent {
     UIStoryboard *sb = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
     return [sb instantiateViewControllerWithIdentifier:@"ZLIPageContentViewController"];
+}
+
+- (BOOL)accessibilityScroll:(UIAccessibilityScrollDirection)direction {
+    DDLogDebug(@"direction: %ld, %@", direction, direction == UIAccessibilityScrollDirectionRight ? @"directionRight" : @"directionLeft");
+
+//    UIViewController *vc = nil;
+
+//    if (direction == UIAccessibilityScrollDirectionRight) {
+//        vc = [self pageViewController:self viewControllerBeforeViewController:self.viewControllers[0]];
+//    } else {
+//        vc = [self pageViewController:self viewControllerAfterViewController:self.viewControllers[0]];
+//    }
+//
+//    UIPageViewControllerNavigationDirection dir = direction == UIAccessibilityScrollDirectionRight ?
+//    UIPageViewControllerNavigationDirectionReverse :
+//    UIPageViewControllerNavigationDirectionForward;
+//    [self setViewControllers:@[vc] direction:dir animated:YES completion:nil];
+
+    return NO;
 }
 
 @end

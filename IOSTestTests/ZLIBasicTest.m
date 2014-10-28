@@ -1,7 +1,7 @@
 #import "ZLISuperClass.h"
 #import "ZLISuperClass+ZLISuperClassCategory.h"
 #import "ZLISubbClass.h"
-#import "Kiwi.h"
+#import <Kiwi/Kiwi.h>
 
 // Starts from 0
 typedef NS_ENUM(NSInteger, ZLIDefaultEnum) {

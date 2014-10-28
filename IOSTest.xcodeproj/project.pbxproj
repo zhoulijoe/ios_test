@@ -15,6 +15,7 @@
 		CB355B2D191B2EBB001B4FD8 /* ZLIBasicTest.m in Sources */ = {isa = PBXBuildFile; fileRef = CB355B2C191B2EBB001B4FD8 /* ZLIBasicTest.m */; };
 		CB355B2F191B3D97001B4FD8 /* ZLIBlockTest.m in Sources */ = {isa = PBXBuildFile; fileRef = CB355B2E191B3D97001B4FD8 /* ZLIBlockTest.m */; };
 		CB91ADD0191209130084724A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = CB91ADD2191209130084724A /* Localizable.strings */; };
+		CB9D6745193EE80F00F6A905 /* SimpleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB9D6744193EE80F00F6A905 /* SimpleView.xib */; };
 		CBB79B02192448560082FBAB /* ZLIFoundationClassesTest.m in Sources */ = {isa = PBXBuildFile; fileRef = CBB79B01192448560082FBAB /* ZLIFoundationClassesTest.m */; };
 		CBB95F26192C356C00D82514 /* ZLISubbClass.m in Sources */ = {isa = PBXBuildFile; fileRef = CBB95F1F192C356C00D82514 /* ZLISubbClass.m */; };
 		CBB95F27192C356C00D82514 /* ZLISubClass.m in Sources */ = {isa = PBXBuildFile; fileRef = CBB95F21192C356C00D82514 /* ZLISubClass.m */; };
@@ -32,6 +33,8 @@
 		CBB95F4C192C357F00D82514 /* ZLIStateRestoreSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CBB95F40192C357F00D82514 /* ZLIStateRestoreSecondViewController.m */; };
 		CBB95F4D192C357F00D82514 /* ZLIViewExperimentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CBB95F42192C357F00D82514 /* ZLIViewExperimentViewController.m */; };
 		CBB95F55192C35D600D82514 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBB95F53192C35D600D82514 /* Main.storyboard */; };
+		CBB95F62192C6AE600D82514 /* ZLIObjectAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = CBB95F61192C6AE600D82514 /* ZLIObjectAssembly.m */; };
+		CBB95F64192C74F000D82514 /* ZLIDependencyInjectionTest.m in Sources */ = {isa = PBXBuildFile; fileRef = CBB95F63192C74F000D82514 /* ZLIDependencyInjectionTest.m */; };
 		CBC9DD071908DD040016502A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBC9DD061908DD040016502A /* Foundation.framework */; };
 		CBC9DD091908DD040016502A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBC9DD081908DD040016502A /* CoreGraphics.framework */; };
 		CBC9DD0B1908DD040016502A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBC9DD0A1908DD040016502A /* UIKit.framework */; };
@@ -44,6 +47,8 @@
 		CBC9DD221908DD040016502A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBC9DD0A1908DD040016502A /* UIKit.framework */; };
 		CBC9DD2A1908DD040016502A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CBC9DD281908DD040016502A /* InfoPlist.strings */; };
 		CBC9DD2C1908DD040016502A /* ZLISampleXCTest.m in Sources */ = {isa = PBXBuildFile; fileRef = CBC9DD2B1908DD040016502A /* ZLISampleXCTest.m */; };
+		CBEED5D1193C02F400925380 /* ZLIConstraintInCodeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CBEED5D0193C02F400925380 /* ZLIConstraintInCodeVC.m */; };
+		CBFF9369192F1C81005FE9A8 /* ZLIViewExperiment2VC.m in Sources */ = {isa = PBXBuildFile; fileRef = CBFF9368192F1C81005FE9A8 /* ZLIViewExperiment2VC.m */; };
 		CC6239768BBE4FB9AFF1449D /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2310997CA78E439B80BBDB65 /* libPods.a */; };
 		FF502789EDE042C0A746E473 /* libPods-IOSTestTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F9019E6A149045BCB20EC627 /* libPods-IOSTestTests.a */; };
 /* End PBXBuildFile section */
@@ -72,6 +77,7 @@
 		CB91ADBD1910B8440084724A /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		CB91ADD1191209130084724A /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
 		CB91ADD3191209160084724A /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		CB9D6744193EE80F00F6A905 /* SimpleView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SimpleView.xib; sourceTree = "<group>"; };
 		CBB79B01192448560082FBAB /* ZLIFoundationClassesTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLIFoundationClassesTest.m; sourceTree = "<group>"; };
 		CBB95F1D192C356C00D82514 /* ZLIProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZLIProtocol.h; path = IOSTest/Object/ZLIProtocol.h; sourceTree = SOURCE_ROOT; };
 		CBB95F1E192C356C00D82514 /* ZLISubbClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZLISubbClass.h; path = IOSTest/Object/ZLISubbClass.h; sourceTree = SOURCE_ROOT; };
@@ -105,6 +111,9 @@
 		CBB95F41192C357F00D82514 /* ZLIViewExperimentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLIViewExperimentViewController.h; sourceTree = "<group>"; };
 		CBB95F42192C357F00D82514 /* ZLIViewExperimentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLIViewExperimentViewController.m; sourceTree = "<group>"; };
 		CBB95F54192C35D600D82514 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CBB95F60192C6AE600D82514 /* ZLIObjectAssembly.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZLIObjectAssembly.h; path = Assembly/ZLIObjectAssembly.h; sourceTree = "<group>"; };
+		CBB95F61192C6AE600D82514 /* ZLIObjectAssembly.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZLIObjectAssembly.m; path = Assembly/ZLIObjectAssembly.m; sourceTree = "<group>"; };
+		CBB95F63192C74F000D82514 /* ZLIDependencyInjectionTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLIDependencyInjectionTest.m; sourceTree = "<group>"; };
 		CBC9DD031908DD040016502A /* IOSTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IOSTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBC9DD061908DD040016502A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		CBC9DD081908DD040016502A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -121,6 +130,10 @@
 		CBC9DD271908DD040016502A /* IOSTestTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "IOSTestTests-Info.plist"; sourceTree = "<group>"; };
 		CBC9DD291908DD040016502A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		CBC9DD2B1908DD040016502A /* ZLISampleXCTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZLISampleXCTest.m; sourceTree = "<group>"; };
+		CBEED5CF193C02F400925380 /* ZLIConstraintInCodeVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLIConstraintInCodeVC.h; sourceTree = "<group>"; };
+		CBEED5D0193C02F400925380 /* ZLIConstraintInCodeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLIConstraintInCodeVC.m; sourceTree = "<group>"; };
+		CBFF9367192F1C81005FE9A8 /* ZLIViewExperiment2VC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLIViewExperiment2VC.h; sourceTree = "<group>"; };
+		CBFF9368192F1C81005FE9A8 /* ZLIViewExperiment2VC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLIViewExperiment2VC.m; sourceTree = "<group>"; };
 		DDC1663E7C7944D0B2505590 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		F9019E6A149045BCB20EC627 /* libPods-IOSTestTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-IOSTestTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -185,6 +198,7 @@
 				CBB95F2D192C357F00D82514 /* ZLIBoundedLabel.m */,
 				CBB95F2E192C357F00D82514 /* ZLIHorizLine.h */,
 				CBB95F2F192C357F00D82514 /* ZLIHorizLine.m */,
+				CB9D6744193EE80F00F6A905 /* SimpleView.xib */,
 			);
 			name = View;
 			path = UI/View;
@@ -211,6 +225,10 @@
 				CBB95F40192C357F00D82514 /* ZLIStateRestoreSecondViewController.m */,
 				CBB95F41192C357F00D82514 /* ZLIViewExperimentViewController.h */,
 				CBB95F42192C357F00D82514 /* ZLIViewExperimentViewController.m */,
+				CBFF9367192F1C81005FE9A8 /* ZLIViewExperiment2VC.h */,
+				CBFF9368192F1C81005FE9A8 /* ZLIViewExperiment2VC.m */,
+				CBEED5CF193C02F400925380 /* ZLIConstraintInCodeVC.h */,
+				CBEED5D0193C02F400925380 /* ZLIConstraintInCodeVC.m */,
 			);
 			name = ViewController;
 			path = UI/ViewController;
@@ -222,6 +240,15 @@
 				CBB95F53192C35D600D82514 /* Main.storyboard */,
 			);
 			name = Storyboard;
+			sourceTree = "<group>";
+		};
+		CBB95F5F192C6A7C00D82514 /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				CBB95F60192C6AE600D82514 /* ZLIObjectAssembly.h */,
+				CBB95F61192C6AE600D82514 /* ZLIObjectAssembly.m */,
+			);
+			name = Assembly;
 			sourceTree = "<group>";
 		};
 		CBC9DCFA1908DD040016502A = {
@@ -261,6 +288,7 @@
 		CBC9DD0C1908DD040016502A /* IOSTest */ = {
 			isa = PBXGroup;
 			children = (
+				CBB95F5F192C6A7C00D82514 /* Assembly */,
 				CBB95F2A192C357200D82514 /* UI */,
 				CB3BCECF1908EA33004E6D06 /* Object */,
 				CBC9DD151908DD040016502A /* ZLIAppDelegate.h */,
@@ -296,6 +324,7 @@
 				CB029E0E191CBBC300E537FE /* ZLIInheritanceTest.m */,
 				CB029E10191CBC3D00E537FE /* ZLIErrorTest.m */,
 				CBB79B01192448560082FBAB /* ZLIFoundationClassesTest.m */,
+				CBB95F63192C74F000D82514 /* ZLIDependencyInjectionTest.m */,
 			);
 			path = IOSTestTests;
 			sourceTree = "<group>";
@@ -361,6 +390,9 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = zhou;
 				TargetAttributes = {
+					CBC9DD021908DD040016502A = {
+						DevelopmentTeam = D94Q8LG85D;
+					};
 					CBC9DD1D1908DD040016502A = {
 						TestTargetID = CBC9DD021908DD040016502A;
 					};
@@ -394,6 +426,7 @@
 				CB91ADD0191209130084724A /* Localizable.strings in Resources */,
 				CBC9DD111908DD040016502A /* InfoPlist.strings in Resources */,
 				CBC9DD191908DD040016502A /* Images.xcassets in Resources */,
+				CB9D6745193EE80F00F6A905 /* SimpleView.xib in Resources */,
 				CBB95F55192C35D600D82514 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -481,9 +514,12 @@
 				CBB95F29192C356C00D82514 /* ZLISuperClass+ZLISuperClassCategory.m in Sources */,
 				CBB95F4D192C357F00D82514 /* ZLIViewExperimentViewController.m in Sources */,
 				CBC9DD131908DD040016502A /* main.m in Sources */,
+				CBEED5D1193C02F400925380 /* ZLIConstraintInCodeVC.m in Sources */,
 				CBB95F26192C356C00D82514 /* ZLISubbClass.m in Sources */,
+				CBB95F62192C6AE600D82514 /* ZLIObjectAssembly.m in Sources */,
 				CBB95F44192C357F00D82514 /* ZLIHorizLine.m in Sources */,
 				CBB95F46192C357F00D82514 /* ZLIPageContentViewController.m in Sources */,
+				CBFF9369192F1C81005FE9A8 /* ZLIViewExperiment2VC.m in Sources */,
 				CBB95F45192C357F00D82514 /* ZLIMainMenuTableViewController.m in Sources */,
 				CBB95F43192C357F00D82514 /* ZLIBoundedLabel.m in Sources */,
 				CBB95F28192C356C00D82514 /* ZLISuperClass.m in Sources */,
@@ -502,6 +538,7 @@
 			files = (
 				CB355B2D191B2EBB001B4FD8 /* ZLIBasicTest.m in Sources */,
 				CB08222F1919FC5F00A2FF93 /* ZLIKiwiSpecTest.m in Sources */,
+				CBB95F64192C74F000D82514 /* ZLIDependencyInjectionTest.m in Sources */,
 				CB029E11191CBC3D00E537FE /* ZLIErrorTest.m in Sources */,
 				CB029E0F191CBBC300E537FE /* ZLIInheritanceTest.m in Sources */,
 				CB029E0B191CAC4100E537FE /* ZLIConcurrencyTest.m in Sources */,
@@ -639,10 +676,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "IOSTest/IOSTest-Prefix.pch";
 				INFOPLIST_FILE = "IOSTest/IOSTest-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -653,10 +693,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "IOSTest/IOSTest-Prefix.pch";
 				INFOPLIST_FILE = "IOSTest/IOSTest-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

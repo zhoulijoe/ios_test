@@ -11,19 +11,27 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-    UIStoryboard *sb = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-    UIPageViewController *pageViewVC = (UIPageViewController *)self.topViewController;
-    pageViewVC.dataSource = self;
 
-    self.pages = @[
-        [sb instantiateViewControllerWithIdentifier:@"ZLIPurpleViewController"],
-        [sb instantiateViewControllerWithIdentifier:@"ZLIBlueViewController"]
-    ];
-    NSArray *viewControllers = @[self.pages[0]];
-    [pageViewVC setViewControllers:viewControllers
-                         direction:UIPageViewControllerNavigationDirectionForward
-                          animated:NO
-                        completion:nil];
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if ([segue.destinationViewController isKindOfClass:[UIPageViewController class]]) {
+        UIPageViewController *pageViewVC = (UIPageViewController *)segue.destinationViewController;
+        pageViewVC.dataSource = self;
+
+        UIStoryboard *sb = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+
+        self.pages = @[
+                       [sb instantiateViewControllerWithIdentifier:@"ZLIPurpleViewController"],
+                       [sb instantiateViewControllerWithIdentifier:@"ZLIBlueViewController"]
+                       ];
+
+        NSArray *viewControllers = @[self.pages[0]];
+        [pageViewVC setViewControllers:viewControllers
+                             direction:UIPageViewControllerNavigationDirectionForward
+                              animated:NO
+                            completion:nil];
+    }
 }
 
 #pragma mark - Page View Controller Data Source

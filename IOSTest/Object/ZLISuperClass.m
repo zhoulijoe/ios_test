@@ -60,6 +60,11 @@
     return [NSString stringWithFormat:@"%@%@", self.firstName, self.lastName];
 }
 
+- (void)modifyFirstName:(NSString *)firstName lastName:(NSString *)lastName {
+    _firstName = firstName;
+    _lastName = lastName;
+}
+
 /**
  * Gets called when object gets deallocated in memory
  */

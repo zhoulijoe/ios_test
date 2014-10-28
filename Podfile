@@ -6,6 +6,8 @@ if FileTest::directory?('../ios_utils')
     pod 'ZLIUtils', :git => 'https://github.com/zhoulijoe/ios_utils.git', :branch => 'develop'
 end
 
+pod 'Typhoon'
+
 target :IOSTestTests, :exclusive => true do
-    pod 'Kiwi/XCTest'
+    pod 'Kiwi'
 end

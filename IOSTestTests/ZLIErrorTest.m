@@ -1,5 +1,7 @@
 #import "Kiwi.h"
 
+typedef void (^ZLIErrorBlock)(NSError **error);
+
 static NSString *const ZLIErrorDomain = @"com.locationlabs.ZLIErrorDomain";
 
 NS_ENUM(NSInteger, ZLIErrorCode) {
@@ -16,6 +18,27 @@ describe(@"Error test", ^{
             };
             NSError *error = [NSError errorWithDomain:ZLIErrorDomain code:ZLIErrorCode1 userInfo:userInfo];
             [[[error localizedDescription] should] equal:@"An error has occured"];
+        });
+
+        it(@"error passing in method param", ^{
+            __block BOOL result = NO;
+
+            ZLIErrorBlock errorBlock = ^(NSError **error) {
+                if (error != NULL) {
+                    result = YES;
+                }
+            };
+
+            NSError *testError;
+            errorBlock(&testError);
+            [[theValue(result) should] beYes];
+
+            result = NO;
+            errorBlock(nil);
+            [[theValue(result) should] beNo];
+
+            errorBlock(NULL);
+            [[theValue(result) should] beNo];
         });
     });
 
