@@ -6,8 +6,10 @@
  */
 @interface ZLISuperClass ()
 
-/** A private class property */
+/** A plublic readon only but private modifiable class property */
 @property NSNumber *height;
+/** A private property */
+@property NSString *privateProp;
 
 @end
 
@@ -33,6 +35,10 @@
     return block(5, 10);
 }
 
++ (NSString *)protocolClassMethod {
+    return NSStringFromSelector(_cmd);
+}
+
 - (id)init {
     return [self initWithFirstName:nil lastName:nil];
 }
@@ -43,8 +49,14 @@
         _firstName = aFirstName;
         _lastName = aLastName;
         _stackTrace = [NSMutableArray array];
+        _privateProp = @"Hidden message";
     }
     return self;
+}
+
+#pragma mark - accessor
+- (NSString *)imageName {
+    return [NSString stringWithFormat:@"%@%@", self.firstName, self.lastName];
 }
 
 /**
@@ -77,6 +89,10 @@
     self.simpleBlockProperty = ^{
         [weakSelf isKindOfClass:[ZLISuperClass class]];
     };
+}
+
+- (NSString *)protocolInstanceMethod {
+    return NSStringFromSelector(_cmd);
 }
 
 @end

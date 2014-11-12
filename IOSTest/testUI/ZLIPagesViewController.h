@@ -1,0 +1,3 @@
+@interface ZLIPagesViewController : UINavigationController
+
+@end

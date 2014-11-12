@@ -1,19 +1,28 @@
 #import "ZLIAppDelegate.h"
-#import "ZLIRootViewController.h"
 
 @implementation ZLIAppDelegate
 
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
+- (BOOL)application:(UIApplication *)application willFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
 
-    ZLIRootViewController *rvc = [ZLIRootViewController new];
-    self.window.rootViewController = rvc;
+    UIStoryboard *mainSB = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    UIViewController *rootVC = [mainSB instantiateViewControllerWithIdentifier:@"ZLIMainMenuTableNavViewController"];
 
+    self.window.rootViewController = rootVC;
     [self.window makeKeyAndVisible];
 
+    return YES;
+}
+
+// Support state restoration
+- (BOOL)application:(UIApplication *)application shouldSaveApplicationState:(NSCoder *)coder {
+    return YES;
+}
+
+- (BOOL)application:(UIApplication *)application shouldRestoreApplicationState:(NSCoder *)coder {
     return YES;
 }
 
@@ -42,6 +51,18 @@
 - (void)applicationWillTerminate:(UIApplication *)application
 {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+/**
+ * Indicate which app delegate method are called and in what order
+ *
+ * @param aSelector selector name
+ *
+ * @return boolean indicating whether requested method is implemented
+ */
+- (BOOL)respondsToSelector:(SEL)aSelector {
+    //NSLog(@"%@", NSStringFromSelector(aSelector));
+    return [super respondsToSelector:aSelector];
 }
 
 @end

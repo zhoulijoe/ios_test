@@ -1,0 +1,3 @@
+@interface ZLIStateRestoreSecondViewController : UIViewController
+
+@end

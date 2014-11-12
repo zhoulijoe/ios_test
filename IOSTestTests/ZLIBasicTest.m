@@ -68,6 +68,17 @@ describe(@"Objective-C basic language syntax", ^{
             [[superClass.height should] beNonNil];
         });
 
+        it(@"readonly property with custom getter", ^{
+            ZLISuperClass *superClass = [ZLISuperClass instanceWithFirstName:@"Joe" lastName:@"Black"];
+            [[superClass.imageName should] equal:@"JoeBlack"];
+        });
+
+        it(@"private property can still be accessed via key-value coding", ^{
+            ZLISuperClass *superClass = [ZLISuperClass superClass];
+            NSString *privateValue = [superClass valueForKey:@"privateProp"];
+            [[privateValue should] equal:@"Hidden message"];
+        });
+
         it(@"method override", ^{
             ZLISubClass *subClass = [ZLISubbClass new];
             NSString *helloStr = [subClass sayHello];
@@ -80,6 +91,17 @@ describe(@"Objective-C basic language syntax", ^{
             ZLISuperClass *superClass = [ZLISuperClass instanceWithFirstName:@"Joe" lastName:@"Black"];
             NSString *str = [superClass lastNameFirstNameString];
             [[str should] equal:@"Black, Joe"];
+        });
+    });
+
+    context(@"protocol", ^{
+        it(@"class and instance method", ^{
+            id<ZLIProtocol> superClass = [ZLISuperClass superClass];
+            NSString *result = [ZLISuperClass protocolClassMethod];
+            [[result should] equal:@"protocolClassMethod"];
+
+            result = [superClass protocolInstanceMethod];
+            [[result should] equal:@"protocolInstanceMethod"];
         });
     });
 

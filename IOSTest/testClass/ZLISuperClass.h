@@ -10,6 +10,8 @@ static BOOL superClassMethodCalled = NO;
 @property NSString *lastName;
 @property (weak) ZLISuperClass *spouse;
 @property (readonly) NSNumber *height;
+/** Icon image name */
+@property (readonly) NSString *imageName;
 /** Updated to indicate the call stack */
 @property NSMutableArray *stackTrace;
 /** Block property needs to be copied to maintain original scope */
