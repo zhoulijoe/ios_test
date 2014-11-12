@@ -1,0 +1,3 @@
+@protocol ZLIProtocol <NSObject>
+
+@end

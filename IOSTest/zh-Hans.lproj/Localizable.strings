@@ -1,0 +1,15 @@
+/* 
+  Localizable.strings
+  IOSTest
+
+  Created by Zhou on 4/30/14.
+  Copyright (c) 2014 zhou. All rights reserved.
+*/
+/* No comment provided by engineer. */
+"AlertMessage" = "警告内容";
+
+/* No comment provided by engineer. */
+"AlertTitle" = "警告";
+
+/* No comment provided by engineer. */
+"CancelTitle" = "确认";
