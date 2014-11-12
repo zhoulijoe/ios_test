@@ -1,5 +1,3 @@
-#import <UIKit/UIKit.h>
-
 #import "ZLIAppDelegate.h"
 
 int main(int argc, char * argv[])

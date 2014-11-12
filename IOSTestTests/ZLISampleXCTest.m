@@ -1,13 +1,13 @@
 #import <XCTest/XCTest.h>
 #import "ZLIRootViewController.h"
 
-@interface IOSTestTests : XCTestCase
+@interface ZLISampleXCTest : XCTestCase
 
 @property ZLIRootViewController *vc;
 
 @end
 
-@implementation IOSTestTests
+@implementation ZLISampleXCTest
 
 + (void)setUp {
     NSLog(@"Test class setup: %@", NSStringFromSelector(_cmd));

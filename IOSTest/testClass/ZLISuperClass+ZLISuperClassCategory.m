@@ -3,7 +3,11 @@
 @implementation ZLISuperClass (ZLISuperClassCategory)
 
 - (void)superCatMethod {
-    NSLog(@"Calling %@", NSStringFromSelector(_cmd));
+    [self.stackTrace addObject:[NSString stringWithUTF8String:__PRETTY_FUNCTION__]];
+}
+
+- (NSString *)lastNameFirstNameString {
+    return [NSString stringWithFormat:@"%@, %@", self.lastName, self.firstName];
 }
 
 @end

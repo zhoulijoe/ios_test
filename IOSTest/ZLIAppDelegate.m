@@ -1,7 +1,4 @@
 #import "ZLIAppDelegate.h"
-#import "ZLIClassTest.h"
-#import "ZLIEnumTest.h"
-#import "ZLIErrorTest.h"
 #import "ZLIRootViewController.h"
 
 @implementation ZLIAppDelegate
@@ -16,8 +13,6 @@
     self.window.rootViewController = rvc;
 
     [self.window makeKeyAndVisible];
-
-    [ZLIClassTest runTest];
 
     return YES;
 }
