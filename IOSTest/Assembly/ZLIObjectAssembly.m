@@ -12,8 +12,8 @@
 - (id)ZLISuperClass {
     return [TyphoonDefinition withClass:[ZLISuperClass class] configuration:^(TyphoonDefinition *definition) {
         [definition useInitializer:@selector(initWithFirstName:lastName:) parameters:^(TyphoonMethod *initializer) {
-            [initializer injectParameter:@"firstName" with:@"Joe"];
-            [initializer injectParameter:@"lastName" with:@"Black"];
+            [initializer injectParameterWith:@"Joe"];
+            [initializer injectParameterWith:@"Black"];
         }];
     }];
 }
@@ -41,8 +41,8 @@
 - (id)ZLISuperClassMethod {
     return [TyphoonDefinition withClass:[ZLISuperClass class] configuration:^(TyphoonDefinition *definition) {
         [definition injectMethod:@selector(modifyFirstName:lastName:) parameters:^(TyphoonMethod *method) {
-            [method injectParameter:@"modifyFirstName" with:@"Jack"];
-            [method injectParameter:@"lastName" with:@"Black"];
+            [method injectParameterWith:@"Jack"];
+            [method injectParameterWith:@"Black"];
         }];
     }];
 }
@@ -59,8 +59,8 @@
 - (id)ZLISuperClassWithFirstName:(NSString *)firstName lastName:(NSString *)lastName {
     return [TyphoonDefinition withClass:[ZLISuperClass class] configuration:^(TyphoonDefinition *definition) {
         [definition useInitializer:@selector(initWithFirstName:lastName:) parameters:^(TyphoonMethod *initializer) {
-            [initializer injectParameter:@"firstName" with:firstName];
-            [initializer injectParameter:@"lastName" with:lastName];
+            [initializer injectParameterWith:firstName];
+            [initializer injectParameterWith:lastName];
         }];
     }];
 }

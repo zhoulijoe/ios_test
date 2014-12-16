@@ -42,13 +42,13 @@
                   Identifier = "Block">
                </Test>
                <Test
-                  Identifier = "Collection">
-               </Test>
-               <Test
                   Identifier = "Concurrency">
                </Test>
                <Test
                   Identifier = "DependencyInjection">
+               </Test>
+               <Test
+                  Identifier = "Error">
                </Test>
                <Test
                   Identifier = "FoundationClasses">

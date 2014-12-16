@@ -105,6 +105,14 @@ describe(@"collection test", ^{
 
             [[[NSFileManager alloc] init] removeItemAtURL:fileURL error:nil];
         });
+
+        it(@"comparison", ^{
+            NSArray *array1 = @[@"a", @"b", @"c"];
+            NSArray *array2 = @[@"a", @"b", @"c"];
+
+            [[theValue([array1 isEqual:array2]) should] beYes];
+            [[theValue([array1 isEqualToArray:array2]) should] beYes];
+        });
     });
 
     context(@"set", ^{

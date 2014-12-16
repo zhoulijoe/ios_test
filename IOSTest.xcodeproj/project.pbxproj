@@ -314,17 +314,17 @@
 		CBC9DD251908DD040016502A /* IOSTestTests */ = {
 			isa = PBXGroup;
 			children = (
-				CBC9DD2B1908DD040016502A /* ZLISampleXCTest.m */,
-				CBC9DD261908DD040016502A /* Supporting Files */,
-				CB08222E1919FC5F00A2FF93 /* ZLIKiwiSpecTest.m */,
 				CB355B2C191B2EBB001B4FD8 /* ZLIBasicTest.m */,
 				CB355B2E191B3D97001B4FD8 /* ZLIBlockTest.m */,
-				CB029E0A191CAC4100E537FE /* ZLIConcurrencyTest.m */,
 				CB029E0C191CB59700E537FE /* ZLICollectionTest.m */,
-				CB029E0E191CBBC300E537FE /* ZLIInheritanceTest.m */,
+				CB029E0A191CAC4100E537FE /* ZLIConcurrencyTest.m */,
+				CBB95F63192C74F000D82514 /* ZLIDependencyInjectionTest.m */,
 				CB029E10191CBC3D00E537FE /* ZLIErrorTest.m */,
 				CBB79B01192448560082FBAB /* ZLIFoundationClassesTest.m */,
-				CBB95F63192C74F000D82514 /* ZLIDependencyInjectionTest.m */,
+				CB029E0E191CBBC300E537FE /* ZLIInheritanceTest.m */,
+				CB08222E1919FC5F00A2FF93 /* ZLIKiwiSpecTest.m */,
+				CBC9DD2B1908DD040016502A /* ZLISampleXCTest.m */,
+				CBC9DD261908DD040016502A /* Supporting Files */,
 			);
 			path = IOSTestTests;
 			sourceTree = "<group>";
