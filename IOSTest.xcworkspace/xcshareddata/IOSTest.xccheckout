@@ -12,7 +12,7 @@
 	<dict>
 		<key>047546D35F8F698AA11E1EA5F7B8707C80842474</key>
 		<string>https://github.com/zhoulijoe/ios_utils.git</string>
-		<key>5BB87F9AD5AEA0AEBB21BD56E70E42476B9A75C4</key>
+		<key>0EF2D1A50D7F28C04D3B8A8C56DE00B3370C0026</key>
 		<string>https://github.com/zhoulijoe/ios_test.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
@@ -21,7 +21,7 @@
 	<dict>
 		<key>047546D35F8F698AA11E1EA5F7B8707C80842474</key>
 		<string>../../ios_utils</string>
-		<key>5BB87F9AD5AEA0AEBB21BD56E70E42476B9A75C4</key>
+		<key>0EF2D1A50D7F28C04D3B8A8C56DE00B3370C0026</key>
 		<string>..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
@@ -29,14 +29,14 @@
 	<key>IDESourceControlProjectVersion</key>
 	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>5BB87F9AD5AEA0AEBB21BD56E70E42476B9A75C4</string>
+	<string>0EF2D1A50D7F28C04D3B8A8C56DE00B3370C0026</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>5BB87F9AD5AEA0AEBB21BD56E70E42476B9A75C4</string>
+			<string>0EF2D1A50D7F28C04D3B8A8C56DE00B3370C0026</string>
 			<key>IDESourceControlWCCName</key>
 			<string>ios_test</string>
 		</dict>
