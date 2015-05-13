@@ -49,8 +49,8 @@
 
 - (id)ZLISuperClassPrePostHook {
     return [TyphoonDefinition withClass:[ZLISuperClass class] configuration:^(TyphoonDefinition *definition) {
-        definition.beforeInjections = @selector(measureHight);
-        definition.afterInjections = @selector(superMethod);
+        [definition performBeforeInjections:@selector(measureHight)];
+        [definition performAfterInjections:@selector(superMethod)];
         [definition injectProperty:@selector(firstName) with:@"Jane"];
         [definition injectProperty:@selector(spouse) with:[self ZLISuperClass]];
     }];

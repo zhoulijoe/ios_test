@@ -1,16 +1,16 @@
 PODS:
-  - CocoaLumberjack (2.0.0-beta3):
-    - CocoaLumberjack/Default
-    - CocoaLumberjack/Extensions
-  - CocoaLumberjack/Core (2.0.0-beta3)
-  - CocoaLumberjack/Default (2.0.0-beta3):
+  - CocoaLumberjack (2.0.0):
+    - CocoaLumberjack/Default (= 2.0.0)
+    - CocoaLumberjack/Extensions (= 2.0.0)
+  - CocoaLumberjack/Core (2.0.0)
+  - CocoaLumberjack/Default (2.0.0):
     - CocoaLumberjack/Core
-  - CocoaLumberjack/Extensions (2.0.0-beta3):
+  - CocoaLumberjack/Extensions (2.0.0):
     - CocoaLumberjack/Default
-  - Kiwi (2.3.0)
-  - Typhoon (2.3.0):
-    - Typhoon/no-arc
-  - Typhoon/no-arc (2.3.0)
+  - Kiwi (2.3.1)
+  - Typhoon (3.1.7):
+    - Typhoon/no-arc (= 3.1.7)
+  - Typhoon/no-arc (3.1.7)
   - ZLIUtils (0.0.1):
     - CocoaLumberjack
     - Typhoon
@@ -25,10 +25,15 @@ EXTERNAL SOURCES:
     :branch: develop
     :git: https://github.com/zhoulijoe/ios_utils.git
 
-SPEC CHECKSUMS:
-  CocoaLumberjack: 55c22a2b8bde7a29c568ab4015b5874216524d70
-  Kiwi: 54bece5b35564d9b8e03c608d926f1a22fcfc589
-  Typhoon: ee9b8c034b11746f8024a0487965c04965a6a4ee
-  ZLIUtils: 8cdb7d4f29ef9ad3c744043c5697dc7bd25bdc88
+CHECKOUT OPTIONS:
+  ZLIUtils:
+    :commit: 2f45764f44dd2cba133f269a64a6c0f2da636ca0
+    :git: https://github.com/zhoulijoe/ios_utils.git
 
-COCOAPODS: 0.33.1
+SPEC CHECKSUMS:
+  CocoaLumberjack: a6f77d987d65dc7ba86b0f84db7d0b9084f77bcb
+  Kiwi: f038a6c61f7a9e4d7766bff5717aa3b3fdb75f55
+  Typhoon: 8f062d3c25f5a4b0c120340441ed9c63e551627a
+  ZLIUtils: 723f8f74389bb20d073c0c430e438125fc422381
+
+COCOAPODS: 0.35.0

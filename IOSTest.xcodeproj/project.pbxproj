@@ -65,7 +65,10 @@
 
 /* Begin PBXFileReference section */
 		2310997CA78E439B80BBDB65 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		B73C98E5B7E846F9B37F22EB /* Pods-IOSTestTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IOSTestTests.xcconfig"; path = "Pods/Pods-IOSTestTests.xcconfig"; sourceTree = "<group>"; };
+		4BDDDFAAE063C4954B71725B /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		5FDA63E812E0FC2BCEF17BCF /* Pods-IOSTestTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IOSTestTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IOSTestTests/Pods-IOSTestTests.debug.xcconfig"; sourceTree = "<group>"; };
+		609D0887F68CAF428D0E1F68 /* Pods-IOSTestTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IOSTestTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-IOSTestTests/Pods-IOSTestTests.release.xcconfig"; sourceTree = "<group>"; };
+		B32A02DA21C68D0A8B05D6C8 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		CB029E0A191CAC4100E537FE /* ZLIConcurrencyTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLIConcurrencyTest.m; sourceTree = "<group>"; };
 		CB029E0C191CB59700E537FE /* ZLICollectionTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLICollectionTest.m; sourceTree = "<group>"; };
 		CB029E0E191CBBC300E537FE /* ZLIInheritanceTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLIInheritanceTest.m; sourceTree = "<group>"; };
@@ -134,7 +137,6 @@
 		CBEED5D0193C02F400925380 /* ZLIConstraintInCodeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLIConstraintInCodeVC.m; sourceTree = "<group>"; };
 		CBFF9367192F1C81005FE9A8 /* ZLIViewExperiment2VC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLIViewExperiment2VC.h; sourceTree = "<group>"; };
 		CBFF9368192F1C81005FE9A8 /* ZLIViewExperiment2VC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLIViewExperiment2VC.m; sourceTree = "<group>"; };
-		DDC1663E7C7944D0B2505590 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		F9019E6A149045BCB20EC627 /* libPods-IOSTestTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-IOSTestTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -164,6 +166,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2A288B67D9979A264FB8C3C1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B32A02DA21C68D0A8B05D6C8 /* Pods.debug.xcconfig */,
+				4BDDDFAAE063C4954B71725B /* Pods.release.xcconfig */,
+				5FDA63E812E0FC2BCEF17BCF /* Pods-IOSTestTests.debug.xcconfig */,
+				609D0887F68CAF428D0E1F68 /* Pods-IOSTestTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		CB3BCECF1908EA33004E6D06 /* Object */ = {
 			isa = PBXGroup;
 			children = (
@@ -258,8 +271,7 @@
 				CBC9DD251908DD040016502A /* IOSTestTests */,
 				CBC9DD051908DD040016502A /* Frameworks */,
 				CBC9DD041908DD040016502A /* Products */,
-				DDC1663E7C7944D0B2505590 /* Pods.xcconfig */,
-				B73C98E5B7E846F9B37F22EB /* Pods-IOSTestTests.xcconfig */,
+				2A288B67D9979A264FB8C3C1 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -469,7 +481,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		D7B2F734CBCB416F9B585650 /* Copy Pods Resources */ = {
@@ -484,7 +496,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Pods-IOSTestTests-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IOSTestTests/Pods-IOSTestTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		F1FD70C802704B4E88831996 /* Check Pods Manifest.lock */ = {
@@ -630,7 +642,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -663,7 +675,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -672,7 +684,7 @@
 		};
 		CBC9DD301908DD040016502A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DDC1663E7C7944D0B2505590 /* Pods.xcconfig */;
+			baseConfigurationReference = B32A02DA21C68D0A8B05D6C8 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -689,7 +701,7 @@
 		};
 		CBC9DD311908DD040016502A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DDC1663E7C7944D0B2505590 /* Pods.xcconfig */;
+			baseConfigurationReference = 4BDDDFAAE063C4954B71725B /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -706,7 +718,7 @@
 		};
 		CBC9DD331908DD040016502A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B73C98E5B7E846F9B37F22EB /* Pods-IOSTestTests.xcconfig */;
+			baseConfigurationReference = 5FDA63E812E0FC2BCEF17BCF /* Pods-IOSTestTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/IOSTest.app/IOSTest";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -729,7 +741,7 @@
 		};
 		CBC9DD341908DD040016502A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B73C98E5B7E846F9B37F22EB /* Pods-IOSTestTests.xcconfig */;
+			baseConfigurationReference = 609D0887F68CAF428D0E1F68 /* Pods-IOSTestTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/IOSTest.app/IOSTest";
 				FRAMEWORK_SEARCH_PATHS = (
