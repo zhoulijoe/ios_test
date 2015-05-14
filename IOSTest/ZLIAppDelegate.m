@@ -22,6 +22,17 @@
     self.window.rootViewController = rootVC;
     [self.window makeKeyAndVisible];
 
+    // Set desired notification settings
+    UIUserNotificationSettings *notificationSettings =
+        [UIUserNotificationSettings settingsForTypes:(UIUserNotificationTypeAlert |
+                                                      UIUserNotificationTypeBadge |
+                                                      UIUserNotificationTypeSound)
+                                          categories:nil];
+    [application registerUserNotificationSettings:notificationSettings];
+
+    // Enable push notification
+    [application registerForRemoteNotifications];
+
     return YES;
 }
 
@@ -55,6 +66,28 @@
 
 - (BOOL)application:(UIApplication *)application shouldRestoreApplicationState:(NSCoder *)coder {
     return YES;
+}
+
+# pragma mark - Notification delegate methods
+
+- (void)application:(UIApplication *)application
+didRegisterUserNotificationSettings:(UIUserNotificationSettings *)notificationSettings {
+    DDLogDebug(@"Registered user notification settings: %@", notificationSettings);
+}
+
+- (void)application:(UIApplication *)application
+didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken {
+    DDLogDebug(@"Registered for remote notification with device token: %@", deviceToken);
+}
+
+- (void)application:(UIApplication *)application
+didFailToRegisterForRemoteNotificationsWithError:(NSError *)error {
+    DDLogError(@"Failed to register for remote notification: %@", error);
+}
+
+- (void)application:(UIApplication *)application
+didReceiveRemoteNotification:(NSDictionary *)userInfo {
+    DDLogDebug(@"Received remote notification: %@", userInfo);
 }
 
 # pragma mark - NSObject method override
