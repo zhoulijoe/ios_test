@@ -1,11 +1,13 @@
 #import "ZLIAppDelegate.h"
 #import <ZLIUtils/ZLILogger.h>
+#import <Parse/Parse.h>
 
 @implementation ZLIAppDelegate
 
-# pragma mark - Life cycle
+# pragma mark - Lifecycle
 
-- (BOOL)application:(UIApplication *)application willFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+- (BOOL)application:(UIApplication *)application
+willFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     [ZLILogger attachLogger];
 
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
@@ -22,12 +24,21 @@
     self.window.rootViewController = rootVC;
     [self.window makeKeyAndVisible];
 
+    return YES;
+}
+
+- (BOOL)application:(UIApplication *)application
+didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    // Register with Parse
+    [Parse setApplicationId:@"SH10wpaSsR9k9dEwqCL5XXjQHnYpjNdfpE8fFc8t"
+                  clientKey:@"w0BGL3QKa3sf7uncWxtq1LChLy02PHJIEqpjV2cE"];
+
     // Set desired notification settings
     UIUserNotificationSettings *notificationSettings =
-        [UIUserNotificationSettings settingsForTypes:(UIUserNotificationTypeAlert |
-                                                      UIUserNotificationTypeBadge |
-                                                      UIUserNotificationTypeSound)
-                                          categories:nil];
+    [UIUserNotificationSettings settingsForTypes:(UIUserNotificationTypeAlert |
+                                                  UIUserNotificationTypeBadge |
+                                                  UIUserNotificationTypeSound)
+                                      categories:nil];
     [application registerUserNotificationSettings:notificationSettings];
 
     // Enable push notification
@@ -78,6 +89,11 @@ didRegisterUserNotificationSettings:(UIUserNotificationSettings *)notificationSe
 - (void)application:(UIApplication *)application
 didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken {
     DDLogDebug(@"Registered for remote notification with device token: %@", deviceToken);
+
+    // Store device token in parse installation and send it to parse server
+    PFInstallation *currentInstallation = [PFInstallation currentInstallation];
+    [currentInstallation setDeviceTokenFromData:deviceToken];
+    [currentInstallation saveInBackground];
 }
 
 - (void)application:(UIApplication *)application
@@ -88,6 +104,8 @@ didFailToRegisterForRemoteNotificationsWithError:(NSError *)error {
 - (void)application:(UIApplication *)application
 didReceiveRemoteNotification:(NSDictionary *)userInfo {
     DDLogDebug(@"Received remote notification: %@", userInfo);
+
+    [PFPush handlePush:userInfo];
 }
 
 # pragma mark - NSObject method override

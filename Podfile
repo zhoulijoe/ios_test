@@ -7,6 +7,7 @@ if FileTest::directory?('../ios_utils')
 end
 
 pod 'Typhoon'
+pod 'Parse'
 
 target :IOSTestTests, :exclusive => true do
     pod 'Kiwi'
