@@ -7,14 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CB029E0B191CAC4100E537FE /* ZLIConcurrencyTest.m in Sources */ = {isa = PBXBuildFile; fileRef = CB029E0A191CAC4100E537FE /* ZLIConcurrencyTest.m */; };
-		CB029E0D191CB59700E537FE /* ZLICollectionTest.m in Sources */ = {isa = PBXBuildFile; fileRef = CB029E0C191CB59700E537FE /* ZLICollectionTest.m */; };
-		CB029E0F191CBBC300E537FE /* ZLIInheritanceTest.m in Sources */ = {isa = PBXBuildFile; fileRef = CB029E0E191CBBC300E537FE /* ZLIInheritanceTest.m */; };
-		CB029E11191CBC3D00E537FE /* ZLIErrorTest.m in Sources */ = {isa = PBXBuildFile; fileRef = CB029E10191CBC3D00E537FE /* ZLIErrorTest.m */; };
-		CB355B2F191B3D97001B4FD8 /* ZLIBlockTest.m in Sources */ = {isa = PBXBuildFile; fileRef = CB355B2E191B3D97001B4FD8 /* ZLIBlockTest.m */; };
 		CB91ADD0191209130084724A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = CB91ADD2191209130084724A /* Localizable.strings */; };
 		CB9D6745193EE80F00F6A905 /* SimpleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB9D6744193EE80F00F6A905 /* SimpleView.xib */; };
-		CBB79B02192448560082FBAB /* ZLIFoundationClassesTest.m in Sources */ = {isa = PBXBuildFile; fileRef = CBB79B01192448560082FBAB /* ZLIFoundationClassesTest.m */; };
 		CBB95F26192C356C00D82514 /* ZLISubbClass.m in Sources */ = {isa = PBXBuildFile; fileRef = CBB95F1F192C356C00D82514 /* ZLISubbClass.m */; };
 		CBB95F27192C356C00D82514 /* ZLISubClass.m in Sources */ = {isa = PBXBuildFile; fileRef = CBB95F21192C356C00D82514 /* ZLISubClass.m */; };
 		CBB95F28192C356C00D82514 /* ZLISuperClass.m in Sources */ = {isa = PBXBuildFile; fileRef = CBB95F23192C356C00D82514 /* ZLISuperClass.m */; };
@@ -67,17 +61,11 @@
 		5FDA63E812E0FC2BCEF17BCF /* Pods-IOSTestTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IOSTestTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IOSTestTests/Pods-IOSTestTests.debug.xcconfig"; sourceTree = "<group>"; };
 		609D0887F68CAF428D0E1F68 /* Pods-IOSTestTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IOSTestTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-IOSTestTests/Pods-IOSTestTests.release.xcconfig"; sourceTree = "<group>"; };
 		B32A02DA21C68D0A8B05D6C8 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
-		CB029E0A191CAC4100E537FE /* ZLIConcurrencyTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLIConcurrencyTest.m; sourceTree = "<group>"; };
-		CB029E0C191CB59700E537FE /* ZLICollectionTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLICollectionTest.m; sourceTree = "<group>"; };
-		CB029E0E191CBBC300E537FE /* ZLIInheritanceTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLIInheritanceTest.m; sourceTree = "<group>"; };
-		CB029E10191CBC3D00E537FE /* ZLIErrorTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLIErrorTest.m; sourceTree = "<group>"; };
-		CB355B2E191B3D97001B4FD8 /* ZLIBlockTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLIBlockTest.m; sourceTree = "<group>"; };
 		CB91ADBC1910B8440084724A /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		CB91ADBD1910B8440084724A /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		CB91ADD1191209130084724A /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
 		CB91ADD3191209160084724A /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		CB9D6744193EE80F00F6A905 /* SimpleView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SimpleView.xib; sourceTree = "<group>"; };
-		CBB79B01192448560082FBAB /* ZLIFoundationClassesTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLIFoundationClassesTest.m; sourceTree = "<group>"; };
 		CBB95F1D192C356C00D82514 /* ZLIProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZLIProtocol.h; path = IOSTest/Object/ZLIProtocol.h; sourceTree = SOURCE_ROOT; };
 		CBB95F1E192C356C00D82514 /* ZLISubbClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZLISubbClass.h; path = IOSTest/Object/ZLISubbClass.h; sourceTree = SOURCE_ROOT; };
 		CBB95F1F192C356C00D82514 /* ZLISubbClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZLISubbClass.m; path = IOSTest/Object/ZLISubbClass.m; sourceTree = SOURCE_ROOT; };
@@ -322,13 +310,7 @@
 		CBC9DD251908DD040016502A /* IOSTestTests */ = {
 			isa = PBXGroup;
 			children = (
-				CB355B2E191B3D97001B4FD8 /* ZLIBlockTest.m */,
-				CB029E0C191CB59700E537FE /* ZLICollectionTest.m */,
-				CB029E0A191CAC4100E537FE /* ZLIConcurrencyTest.m */,
 				CBB95F63192C74F000D82514 /* ZLIDependencyInjectionTest.m */,
-				CB029E10191CBC3D00E537FE /* ZLIErrorTest.m */,
-				CBB79B01192448560082FBAB /* ZLIFoundationClassesTest.m */,
-				CB029E0E191CBBC300E537FE /* ZLIInheritanceTest.m */,
 				CBC9DD2B1908DD040016502A /* ZLISampleXCTest.m */,
 				CBC9DD261908DD040016502A /* Supporting Files */,
 			);
@@ -543,13 +525,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CBB95F64192C74F000D82514 /* ZLIDependencyInjectionTest.m in Sources */,
-				CB029E11191CBC3D00E537FE /* ZLIErrorTest.m in Sources */,
-				CB029E0F191CBBC300E537FE /* ZLIInheritanceTest.m in Sources */,
-				CB029E0B191CAC4100E537FE /* ZLIConcurrencyTest.m in Sources */,
-				CBB79B02192448560082FBAB /* ZLIFoundationClassesTest.m in Sources */,
 				CBC9DD2C1908DD040016502A /* ZLISampleXCTest.m in Sources */,
-				CB355B2F191B3D97001B4FD8 /* ZLIBlockTest.m in Sources */,
-				CB029E0D191CB59700E537FE /* ZLICollectionTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
