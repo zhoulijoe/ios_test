@@ -1,7 +1,7 @@
 #import "ZLIPagesViewController.h"
 #import "ZLISuperClass.h"
 #import "ZLIPageContentViewController.h"
-#import <ZLIUtils/ZLILogger.h>
+#import "ZLILogger.h"
 
 @interface ZLIPagesViewController () <UIPageViewControllerDataSource>
 
@@ -125,7 +125,7 @@
 }
 
 - (BOOL)accessibilityScroll:(UIAccessibilityScrollDirection)direction {
-    DDLogDebug(@"direction: %ld, %@", direction, direction == UIAccessibilityScrollDirectionRight ? @"directionRight" : @"directionLeft");
+    DDLogDebug(@"direction: %@, %@", @(direction), direction == UIAccessibilityScrollDirectionRight ? @"directionRight" : @"directionLeft");
 
 //    UIViewController *vc = nil;
 

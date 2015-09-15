@@ -1,5 +1,5 @@
 #import "ZLIPageContentViewController.h"
-#import <ZLIUtils/ZLILogger.h>
+#import "ZLILogger.h"
 #import "ZLISuperClass+ZLISuperClassCategory.h"
 
 @implementation ZLIPageContentViewController

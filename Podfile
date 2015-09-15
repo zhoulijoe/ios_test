@@ -1,11 +1,8 @@
-platform :ios, '7.1'
+source 'https://github.com/CocoaPods/Specs.git'
 
-if FileTest::directory?('../ios_utils')
-    pod 'ZLIUtils', :path => '../ios_utils'
-    else
-    pod 'ZLIUtils', :git => 'https://github.com/zhoulijoe/ios_utils.git', :branch => 'develop'
-end
+platform :ios, '8.4'
 
+pod 'CocoaLumberjack'
 pod 'Typhoon'
 pod 'Parse'
 

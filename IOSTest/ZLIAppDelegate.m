@@ -1,5 +1,5 @@
 #import "ZLIAppDelegate.h"
-#import <ZLIUtils/ZLILogger.h>
+#import "ZLILogger.h"
 #import <Parse/Parse.h>
 
 @implementation ZLIAppDelegate

@@ -1,6 +1,6 @@
 #import "ZLISuperClass.h"
-#import <ZLIUtils/ZLILogger.h>
-#import <ZLIUtils/ZLIMathUtil.h>
+#import "ZLILogger.h"
+#import "ZLIMathUtil.h"
 
 /**
  * Class extension

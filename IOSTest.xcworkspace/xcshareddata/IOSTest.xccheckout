@@ -5,15 +5,13 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>179FE801-4F27-46AB-945B-866FEFE1E064</string>
+	<string>5DBAB7E7-0C18-4966-B3C0-D19B5472BA6F</string>
 	<key>IDESourceControlProjectName</key>
 	<string>IOSTest</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>0EF2D1A50D7F28C04D3B8A8C56DE00B3370C0026</key>
 		<string>https://github.com/zhoulijoe/ios_test.git</string>
-		<key>1D5F36B689EAFB359AE777D0F0F5FA903616AADD</key>
-		<string>https://github.com/zhoulijoe/ios_utils.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>IOSTest.xcworkspace</string>
@@ -21,8 +19,6 @@
 	<dict>
 		<key>0EF2D1A50D7F28C04D3B8A8C56DE00B3370C0026</key>
 		<string>..</string>
-		<key>1D5F36B689EAFB359AE777D0F0F5FA903616AADD</key>
-		<string>../../ios_utils</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/zhoulijoe/ios_test.git</string>
@@ -39,14 +35,6 @@
 			<string>0EF2D1A50D7F28C04D3B8A8C56DE00B3370C0026</string>
 			<key>IDESourceControlWCCName</key>
 			<string>ios_test</string>
-		</dict>
-		<dict>
-			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
-			<string>public.vcs.git</string>
-			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>1D5F36B689EAFB359AE777D0F0F5FA903616AADD</string>
-			<key>IDESourceControlWCCName</key>
-			<string>ios_utils</string>
 		</dict>
 	</array>
 </dict>

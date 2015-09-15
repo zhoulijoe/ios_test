@@ -1,5 +1,5 @@
 #import "ZLIViewExperiment2VC.h"
-#import <ZLIUtils/ZLILogger.h>
+#import "ZLILogger.h"
 
 @implementation ZLIViewExperiment2VC
 

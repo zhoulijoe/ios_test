@@ -1,39 +1,31 @@
 PODS:
-  - Bolts/Tasks (1.1.5)
-  - CocoaLumberjack (2.0.0):
-    - CocoaLumberjack/Default (= 2.0.0)
-    - CocoaLumberjack/Extensions (= 2.0.0)
-  - CocoaLumberjack/Core (2.0.0)
-  - CocoaLumberjack/Default (2.0.0):
+  - Bolts/Tasks (1.2.2)
+  - CocoaLumberjack (2.0.1):
+    - CocoaLumberjack/Default (= 2.0.1)
+    - CocoaLumberjack/Extensions (= 2.0.1)
+  - CocoaLumberjack/Core (2.0.1)
+  - CocoaLumberjack/Default (2.0.1):
     - CocoaLumberjack/Core
-  - CocoaLumberjack/Extensions (2.0.0):
+  - CocoaLumberjack/Extensions (2.0.1):
     - CocoaLumberjack/Default
-  - Kiwi (2.3.1)
-  - Parse (1.7.4):
-    - Bolts/Tasks (>= 1.1.5)
-  - Typhoon (3.1.8):
-    - Typhoon/no-arc (= 3.1.8)
-  - Typhoon/no-arc (3.1.8)
-  - ZLIUtils (0.0.1):
-    - CocoaLumberjack
-    - Typhoon
+  - Kiwi (2.4.0)
+  - Parse (1.8.4):
+    - Bolts/Tasks (>= 1.2.2)
+  - Typhoon (3.3.2):
+    - Typhoon/no-arc (= 3.3.2)
+  - Typhoon/no-arc (3.3.2)
 
 DEPENDENCIES:
+  - CocoaLumberjack
   - Kiwi
   - Parse
   - Typhoon
-  - ZLIUtils (from `../ios_utils`)
-
-EXTERNAL SOURCES:
-  ZLIUtils:
-    :path: "../ios_utils"
 
 SPEC CHECKSUMS:
-  Bolts: aac24961496d504aa56fc267cde95162a71bac39
-  CocoaLumberjack: a6f77d987d65dc7ba86b0f84db7d0b9084f77bcb
-  Kiwi: f038a6c61f7a9e4d7766bff5717aa3b3fdb75f55
-  Parse: 6ca512c6e860b66739c95151b2f76ac4712b7842
-  Typhoon: b9b94a384d772458b955164fa826706706058dec
-  ZLIUtils: da5a30f17131f07a459d4bf3aa6996d4e4b79bb2
+  Bolts: 20a2bd788273360cb1e31530dc19b8544eef2544
+  CocoaLumberjack: 019d1361244274a6138c788c6cb80baabc13fb8f
+  Kiwi: f49c9d54b28917df5928fe44968a39ed198cb8a8
+  Parse: c09d6efe4b2eea752765bc6f365a55516d909079
+  Typhoon: d0f4b40120b7011ac41748c3ca141cb12aac3737
 
-COCOAPODS: 0.37.2
+COCOAPODS: 0.38.2

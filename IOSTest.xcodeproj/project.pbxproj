@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CB21C7401BA8B9710015ED27 /* ZLILogger.m in Sources */ = {isa = PBXBuildFile; fileRef = CB21C73F1BA8B9710015ED27 /* ZLILogger.m */; };
+		CB21C7441BA8B9890015ED27 /* ZLIMathUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = CB21C7431BA8B9890015ED27 /* ZLIMathUtil.m */; };
+		CB2902DD1B82A978001A2884 /* ZLITyphoonPropertyTest.m in Sources */ = {isa = PBXBuildFile; fileRef = CB2902DC1B82A978001A2884 /* ZLITyphoonPropertyTest.m */; };
+		CB2902E11B82AAAA001A2884 /* ZLIConfigAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = CB2902E01B82AAAA001A2884 /* ZLIConfigAssembly.m */; };
+		CB2902E31B82AB60001A2884 /* default.json in Resources */ = {isa = PBXBuildFile; fileRef = CB2902E21B82AB60001A2884 /* default.json */; };
+		CB2902E51B82AB71001A2884 /* override.json in Resources */ = {isa = PBXBuildFile; fileRef = CB2902E41B82AB71001A2884 /* override.json */; };
+		CB2902E91B82B159001A2884 /* ZLITestObject.m in Sources */ = {isa = PBXBuildFile; fileRef = CB2902E81B82B159001A2884 /* ZLITestObject.m */; };
 		CB91ADD0191209130084724A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = CB91ADD2191209130084724A /* Localizable.strings */; };
 		CB9D6745193EE80F00F6A905 /* SimpleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB9D6744193EE80F00F6A905 /* SimpleView.xib */; };
 		CBB95F26192C356C00D82514 /* ZLISubbClass.m in Sources */ = {isa = PBXBuildFile; fileRef = CBB95F1F192C356C00D82514 /* ZLISubbClass.m */; };
@@ -39,6 +46,8 @@
 		CBC9DD221908DD040016502A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBC9DD0A1908DD040016502A /* UIKit.framework */; };
 		CBC9DD2A1908DD040016502A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CBC9DD281908DD040016502A /* InfoPlist.strings */; };
 		CBC9DD2C1908DD040016502A /* ZLISampleXCTest.m in Sources */ = {isa = PBXBuildFile; fileRef = CBC9DD2B1908DD040016502A /* ZLISampleXCTest.m */; };
+		CBD1E7161BA8B7A400D19569 /* ZLILogger.m in Sources */ = {isa = PBXBuildFile; fileRef = CBD1E7151BA8B7A400D19569 /* ZLILogger.m */; };
+		CBD1E71A1BA8B88D00D19569 /* ZLIMathUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = CBD1E7191BA8B88D00D19569 /* ZLIMathUtil.m */; };
 		CBEED5D1193C02F400925380 /* ZLIConstraintInCodeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CBEED5D0193C02F400925380 /* ZLIConstraintInCodeVC.m */; };
 		CBFF9369192F1C81005FE9A8 /* ZLIViewExperiment2VC.m in Sources */ = {isa = PBXBuildFile; fileRef = CBFF9368192F1C81005FE9A8 /* ZLIViewExperiment2VC.m */; };
 		CC6239768BBE4FB9AFF1449D /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2310997CA78E439B80BBDB65 /* libPods.a */; };
@@ -61,6 +70,17 @@
 		5FDA63E812E0FC2BCEF17BCF /* Pods-IOSTestTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IOSTestTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IOSTestTests/Pods-IOSTestTests.debug.xcconfig"; sourceTree = "<group>"; };
 		609D0887F68CAF428D0E1F68 /* Pods-IOSTestTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IOSTestTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-IOSTestTests/Pods-IOSTestTests.release.xcconfig"; sourceTree = "<group>"; };
 		B32A02DA21C68D0A8B05D6C8 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		CB21C73E1BA8B9710015ED27 /* ZLILogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLILogger.h; sourceTree = "<group>"; };
+		CB21C73F1BA8B9710015ED27 /* ZLILogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLILogger.m; sourceTree = "<group>"; };
+		CB21C7421BA8B9890015ED27 /* ZLIMathUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLIMathUtil.h; sourceTree = "<group>"; };
+		CB21C7431BA8B9890015ED27 /* ZLIMathUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLIMathUtil.m; sourceTree = "<group>"; };
+		CB2902DC1B82A978001A2884 /* ZLITyphoonPropertyTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLITyphoonPropertyTest.m; sourceTree = "<group>"; };
+		CB2902DF1B82AAAA001A2884 /* ZLIConfigAssembly.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLIConfigAssembly.h; sourceTree = "<group>"; };
+		CB2902E01B82AAAA001A2884 /* ZLIConfigAssembly.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLIConfigAssembly.m; sourceTree = "<group>"; };
+		CB2902E21B82AB60001A2884 /* default.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = default.json; sourceTree = "<group>"; };
+		CB2902E41B82AB71001A2884 /* override.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = override.json; sourceTree = "<group>"; };
+		CB2902E71B82B159001A2884 /* ZLITestObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLITestObject.h; sourceTree = "<group>"; };
+		CB2902E81B82B159001A2884 /* ZLITestObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLITestObject.m; sourceTree = "<group>"; };
 		CB91ADBC1910B8440084724A /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		CB91ADBD1910B8440084724A /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		CB91ADD1191209130084724A /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -117,6 +137,10 @@
 		CBC9DD271908DD040016502A /* IOSTestTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "IOSTestTests-Info.plist"; sourceTree = "<group>"; };
 		CBC9DD291908DD040016502A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		CBC9DD2B1908DD040016502A /* ZLISampleXCTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZLISampleXCTest.m; sourceTree = "<group>"; };
+		CBD1E7141BA8B7A400D19569 /* ZLILogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLILogger.h; sourceTree = "<group>"; };
+		CBD1E7151BA8B7A400D19569 /* ZLILogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLILogger.m; sourceTree = "<group>"; };
+		CBD1E7181BA8B88D00D19569 /* ZLIMathUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLIMathUtil.h; sourceTree = "<group>"; };
+		CBD1E7191BA8B88D00D19569 /* ZLIMathUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLIMathUtil.m; sourceTree = "<group>"; };
 		CBEED5CF193C02F400925380 /* ZLIConstraintInCodeVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLIConstraintInCodeVC.h; sourceTree = "<group>"; };
 		CBEED5D0193C02F400925380 /* ZLIConstraintInCodeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLIConstraintInCodeVC.m; sourceTree = "<group>"; };
 		CBFF9367192F1C81005FE9A8 /* ZLIViewExperiment2VC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLIViewExperiment2VC.h; sourceTree = "<group>"; };
@@ -159,6 +183,42 @@
 				609D0887F68CAF428D0E1F68 /* Pods-IOSTestTests.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		CB21C73D1BA8B9710015ED27 /* Log */ = {
+			isa = PBXGroup;
+			children = (
+				CB21C73E1BA8B9710015ED27 /* ZLILogger.h */,
+				CB21C73F1BA8B9710015ED27 /* ZLILogger.m */,
+			);
+			path = Log;
+			sourceTree = "<group>";
+		};
+		CB21C7411BA8B9890015ED27 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				CB21C7421BA8B9890015ED27 /* ZLIMathUtil.h */,
+				CB21C7431BA8B9890015ED27 /* ZLIMathUtil.m */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		CB2902DE1B82A9DC001A2884 /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				CB2902DF1B82AAAA001A2884 /* ZLIConfigAssembly.h */,
+				CB2902E01B82AAAA001A2884 /* ZLIConfigAssembly.m */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		CB2902E61B82B0B5001A2884 /* TestObject */ = {
+			isa = PBXGroup;
+			children = (
+				CB2902E71B82B159001A2884 /* ZLITestObject.h */,
+				CB2902E81B82B159001A2884 /* ZLITestObject.m */,
+			);
+			path = TestObject;
 			sourceTree = "<group>";
 		};
 		CB3BCECF1908EA33004E6D06 /* Object */ = {
@@ -284,6 +344,8 @@
 		CBC9DD0C1908DD040016502A /* IOSTest */ = {
 			isa = PBXGroup;
 			children = (
+				CB21C7411BA8B9890015ED27 /* Util */,
+				CB21C73D1BA8B9710015ED27 /* Log */,
 				CBB95F5F192C6A7C00D82514 /* Assembly */,
 				CBB95F2A192C357200D82514 /* UI */,
 				CB3BCECF1908EA33004E6D06 /* Object */,
@@ -310,9 +372,14 @@
 		CBC9DD251908DD040016502A /* IOSTestTests */ = {
 			isa = PBXGroup;
 			children = (
+				CBD1E7171BA8B88D00D19569 /* Util */,
+				CBD1E7131BA8B7A400D19569 /* Log */,
+				CB2902E61B82B0B5001A2884 /* TestObject */,
+				CB2902DE1B82A9DC001A2884 /* Assembly */,
 				CBB95F63192C74F000D82514 /* ZLIDependencyInjectionTest.m */,
 				CBC9DD2B1908DD040016502A /* ZLISampleXCTest.m */,
 				CBC9DD261908DD040016502A /* Supporting Files */,
+				CB2902DC1B82A978001A2884 /* ZLITyphoonPropertyTest.m */,
 			);
 			path = IOSTestTests;
 			sourceTree = "<group>";
@@ -322,9 +389,31 @@
 			children = (
 				CBC9DD271908DD040016502A /* IOSTestTests-Info.plist */,
 				CBC9DD281908DD040016502A /* InfoPlist.strings */,
+				CB2902E21B82AB60001A2884 /* default.json */,
+				CB2902E41B82AB71001A2884 /* override.json */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
+		};
+		CBD1E7131BA8B7A400D19569 /* Log */ = {
+			isa = PBXGroup;
+			children = (
+				CBD1E7141BA8B7A400D19569 /* ZLILogger.h */,
+				CBD1E7151BA8B7A400D19569 /* ZLILogger.m */,
+			);
+			name = Log;
+			path = IOSTest/Log;
+			sourceTree = SOURCE_ROOT;
+		};
+		CBD1E7171BA8B88D00D19569 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				CBD1E7181BA8B88D00D19569 /* ZLIMathUtil.h */,
+				CBD1E7191BA8B88D00D19569 /* ZLIMathUtil.m */,
+			);
+			name = Util;
+			path = IOSTest/Util;
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
@@ -423,7 +512,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB2902E51B82AB71001A2884 /* override.json in Resources */,
 				CBC9DD2A1908DD040016502A /* InfoPlist.strings in Resources */,
+				CB2902E31B82AB60001A2884 /* default.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -499,6 +590,7 @@
 			files = (
 				CBC9DD171908DD040016502A /* ZLIAppDelegate.m in Sources */,
 				CBB95F48192C357F00D82514 /* ZLIPagesViewController.m in Sources */,
+				CB21C7401BA8B9710015ED27 /* ZLILogger.m in Sources */,
 				CBB95F29192C356C00D82514 /* ZLISuperClass+ZLISuperClassCategory.m in Sources */,
 				CBB95F4D192C357F00D82514 /* ZLIViewExperimentViewController.m in Sources */,
 				CBC9DD131908DD040016502A /* main.m in Sources */,
@@ -511,6 +603,7 @@
 				CBB95F45192C357F00D82514 /* ZLIMainMenuTableViewController.m in Sources */,
 				CBB95F43192C357F00D82514 /* ZLIBoundedLabel.m in Sources */,
 				CBB95F28192C356C00D82514 /* ZLISuperClass.m in Sources */,
+				CB21C7441BA8B9890015ED27 /* ZLIMathUtil.m in Sources */,
 				CBB95F47192C357F00D82514 /* ZLIPageDataSourceViewController.m in Sources */,
 				CBB95F4A192C357F00D82514 /* ZLIStateRestoreParentViewController.m in Sources */,
 				CBB95F4B192C357F00D82514 /* ZLIStateRestorePresentedViewController.m in Sources */,
@@ -524,8 +617,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB2902DD1B82A978001A2884 /* ZLITyphoonPropertyTest.m in Sources */,
+				CBD1E71A1BA8B88D00D19569 /* ZLIMathUtil.m in Sources */,
 				CBB95F64192C74F000D82514 /* ZLIDependencyInjectionTest.m in Sources */,
+				CB2902E91B82B159001A2884 /* ZLITestObject.m in Sources */,
 				CBC9DD2C1908DD040016502A /* ZLISampleXCTest.m in Sources */,
+				CB2902E11B82AAAA001A2884 /* ZLIConfigAssembly.m in Sources */,
+				CBD1E7161BA8B7A400D19569 /* ZLILogger.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
